@@ -11,7 +11,7 @@ The goal of this project is to build two models that classify **photoplethysmogr
 while the binary classifier classifies an input sample into pathological (S and V) and non-pathological (N). Moreover, one metric should be defined to monitor and evaluate the performance of the models.
 
 <p align="center">
-  <img width="800" heigth="250" alt="noise" src="images/sssss.png">
+  <img width="800" heigth="250" alt="noise" src="images/single_peaks.png">
 </p>
 
 ## PREPROCESSING
@@ -38,3 +38,7 @@ In addressing both binary and multi-class classification challenges, diverse met
 - In multi-class classification, two consecutive binary models were implemented, followed by additional machine learning models (Random Forest, SVM, KNN) for further refinement.
 
 Deep learning models, including 1D-convolutional networks and recurrent layers (LSTM, BLSTM), were explored with different architectures. Confidence computation involved mapping predictions to confidence values, with specific considerations for binary and multi-class scenarios. 
+
+<p align="center">
+  <img width="800" heigth="250" alt="noise" src="images/model.png">
+</p>
