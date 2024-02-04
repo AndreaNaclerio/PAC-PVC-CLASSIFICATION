@@ -32,6 +32,9 @@ In the preprocessing phase, the raw data underwent several steps:
 5. **Data Splitting**: Data splitting was performed to prevent bias by consistently dividing patients between training and validation
  
 
-
-
 ## MODELS
+In addressing both binary and multi-class classification challenges, diverse methodologies were employed. 
+- For binary classification, an ensemble approach was used to handle unbalanced data, training the identified optimal model five times with different sets. The focus was on reducing false negatives, and a weighted loss function and threshold tuning were applied.
+- In multi-class classification, two consecutive binary models were implemented, followed by additional machine learning models (Random Forest, SVM, KNN) for further refinement.
+
+Deep learning models, including 1D-convolutional networks and recurrent layers (LSTM, BLSTM), were explored with different architectures. Confidence computation involved mapping predictions to confidence values, with specific considerations for binary and multi-class scenarios. 
