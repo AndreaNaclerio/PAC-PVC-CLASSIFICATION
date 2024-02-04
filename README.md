@@ -42,3 +42,11 @@ Deep learning models, including 1D-convolutional networks and recurrent layers (
 <p align="center">
   <img width="800" heigth="250" alt="noise" src="images/model.png">
 </p>
+
+## EXPLENABILITY
+To gain insights into the model's workings, the GradCAM explainability method was employed. GradCAM generates a heatmap from the last convolutional layer, highlighting the crucial input regions used by the model to determine the predicted class. The generated heatmap, as illustrated in the figure below, emphasizes the ascending and descending regions of the central peak, considering both slope and peak values. While GradCAM provides a somewhat coarse explanation due to a shorter heatmap compared to the original input length, it serves as an initial step in understanding the model's criteria for classifying samples.
+
+<p align="center">
+  <img width="800" heigth="250" alt="noise" src="images/gradcam.png">
+</p>
+
